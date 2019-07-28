@@ -1,0 +1,21 @@
+{
+  "name": "prom-server-nodejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm run build",
+    "check-build": "[ -d \"public\" ] || npm run build",
+    "start": "npm run check-build && node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
